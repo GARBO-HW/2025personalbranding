@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'NotoSansTC-Black-Alphabetic';
+  src: url('NotoSansTC-Black-Alphabetic.eot');
+  src: url('NotoSansTC-Black-Alphabetic.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansTC-Black-Alphabetic.svg#NotoSansTC-Black-Alphabetic') format('svg'),
+       url('NotoSansTC-Black-Alphabetic.ttf') format('truetype'),
+       url('NotoSansTC-Black-Alphabetic.woff') format('woff'),
+       url('NotoSansTC-Black-Alphabetic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
