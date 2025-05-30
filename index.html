@@ -1,540 +1,773 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>首頁</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
-    <div class="container">
-      <nav>
-        <ul class="d-flex justify-content-center list-unstyled">
-          <li><a class="text-decoration-none" href="#">首頁</a></li>
+    <header>
+      <nav class="container">
+        <ul class="header-menu">
+          <li><a href="#" class="header-menu-link">首頁</a></li>
           <li>
-            <a class="text-decoration-none" href="#">部落格</a>
+            <a href="#" class="header-menu-link">部落格</a>
           </li>
         </ul>
       </nav>
-      <div class="position-relative">
-        <div class="container-fluid px-0">
-          <div class="row g-0">
-            <div class="col-12 col-md-12 col-lg-6">
-              <img
-                src="./img/Hero Section1.png"
-                class="img-fluid w-100"
-                alt="人物介紹"
-              />
-            </div>
-            <div class="col-12 col-md-12 col-lg-6">
-              <img
-                src="./img/Hero Section2.png"
-                class="img-fluid w-100 object-fit: cover"
-                alt="人物背景"
-              />
-            </div>
-          </div>
-          <div class="role-intro1">
-            <h1 class="h1-9 theme-color">Alyse Wang</h1>
-            <p class="p1-9 theme-color">前端工程師 & 職涯諮詢師</p>
+    </header>
+
+    <!-- Banner -->
+    <article>
+      <div class="banner">
+        <!-- 個人照 -->
+        <picture class="banner-picture">
+          <source media="(min-width: 768px)" srcset="./img/Hero Section1.png" />
+          <img src="./img/Hero Section1.png" alt="Alyse Wang" />
+        </picture>
+
+        <!-- 標題 -->
+        <div class="banner-content banner-bg">
+          <div class="container container-pad-clear">
+            <h1 class="banner-title">
+              <div class="banner-title-main">Alyse Wang</div>
+              <div class="banner-title-sub">前端工程師 & 職涯諮詢師</div>
+            </h1>
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" class="introduction">
-        <p class="p1-1">嗨，我是Alyse一名深耕前端技術的工程師</p>
-        <p class="p1-1">
-          擅長 React、Vue
-          等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
-        </p>
-        <div class="icons">
-          <ul
-            class="d-flex align-items-center justify-content-start gap-1 list-unstyled"
-          >
+
+      <!-- 介紹 container -->
+      <div class="container container-dt-clear">
+        <!-- 介紹 -->
+        <div class="banner-intro">
+          <!-- 手機版本 -->
+          <div class="d-pad-none mb-4">
+            <p class="d-flex col-gap-2 mb-2">
+              <span>嗨，我是</span>
+              <span>Alyse</span>
+            </p>
+            <p>一名深耕前端技術的工程師。</p>
+          </div>
+
+          <!-- 平板以上版本 -->
+          <p class="d-none d-pad-flex col-gap-2 mb-4">
+            <span>嗨，我是</span>
+            <span>Alyse</span>
+            <span>一名深耕前端技術的工程師。</span>
+          </p>
+
+          <p class="mb-4">
+            擅長 React、Vue
+            等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
+          </p>
+
+          <!-- 社群 -->
+          <ul class="d-flex">
             <li>
-              <a href="#"><img src="./img/icon/youtube.png" alt="youtube" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/icon/padcast.png" alt="podcast" /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="./img/icon/facebook.png" alt="facebook" />
+              <a href="#">
+                <img
+                  src="./img/icon/youtube.png"
+                  alt="Youtube"
+                  class="banner-social-link"
+                />
               </a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./img/icon/linkedin.png" alt="linkedin"
-              /></a>
+              <a href="#">
+                <img
+                  src="./img/icon/padcast.png"
+                  alt="Apple Podcast"
+                  class="banner-social-link"
+                />
+              </a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./img/icon/instrgram.png" alt="instrgram"
-              /></a>
+              <a href="#">
+                <img
+                  src="./img/icon/facebook.png"
+                  alt="Facebook"
+                  class="banner-social-link"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./img/icon/linkedin.png"
+                  alt="Linkedin"
+                  class="banner-social-link"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./img/icon/instrgram.png"
+                  alt="Instagram"
+                  class="banner-social-link"
+                />
+              </a>
             </li>
           </ul>
+          <!-- 社群 end -->
         </div>
+        <!-- 介紹 end -->
       </div>
-      <div>
-        <h2 data-aos="fade-up" class="h2-2">專案服務與方案</h2>
-        <div data-aos="fade-right" class="container mb-6">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <img src="./img/photo1.png" class="img1" alt="" />
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="part1">
-                <svg
-                  class="line-m"
-                  viewBox="0 0 200 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line
-                    x1="10"
-                    y1="10"
-                    x2="25"
-                    y2="10"
-                    stroke="blue"
-                    stroke-width="1"
-                  />
-                </svg>
-                <h3 class="h3-1">履歷健檢</h3>
-                <p>
-                  履歷是打開機會之門的第一步。讓我協助你突顯專業技術與核心能力，並透過簡短模擬面試為你加分，讓面試官第一眼就被你吸引。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-left" class="container mb-6">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <img src="./img/photo2.png" class="img2" alt="" />
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="part2">
-                <svg
-                  class="line-m"
-                  viewBox="0 0 200 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line
-                    x1="10"
-                    y1="10"
-                    x2="25"
-                    y2="10"
-                    stroke="blue"
-                    stroke-width="1"
-                  />
-                </svg>
-                <h3 class="h3-1">線上諮詢</h3>
-                <p>
-                  想快速解決前端學習瓶頸，或需要專業職涯指引？透過線上一對一諮詢，我將協助你更有方向地邁進。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-right" class="container mb-6">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <img src="./img/photo3.png" class="img3" alt="" />
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="part3">
-                <svg
-                  class="line-m"
-                  viewBox="0 0 200 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line
-                    x1="10"
-                    y1="10"
-                    x2="25"
-                    y2="10"
-                    stroke="blue"
-                    stroke-width="1"
-                  />
-                </svg>
-                <h3 class="h3-1">網頁開發</h3>
-                <p>
-                  想打造高效能、具美感的網站？我提供從需求訪談到架構實作的一站式服務，讓你的品牌與產品在線上脫穎而出。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-left" class="container mb-6">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <img src="./img/photo4.png" class="img4" alt="" />
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="part4">
-                <svg
-                  class="line-m"
-                  viewBox="0 0 200 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line
-                    x1="10"
-                    y1="10"
-                    x2="25"
-                    y2="10"
-                    stroke="blue"
-                    stroke-width="1"
-                  />
-                </svg>
-                <h3 class="h3-1">企業內訓</h3>
-                <p>
-                  想讓團隊快速掌握前端最新技術或優化現有專案流程？我可協助打造專業、實用的企業內訓課程，一次解決團隊痛點。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h4 data-aos="fade-up" class="h4-1">
-          聯繫我，取得更多資訊！<i class="bi bi-arrow-right-circle fs-4"></i>
-        </h4>
-        <div data-aos="fade-up" class="line1"></div>
-      </div>
-      <div class="bolg-intro">
-        <h2 data-aos="fade-up" class="h2-2">部落格精選</h2>
-        <div data-aos="fade-up" class="pop">
-          <button
-            class="desktop btn d-flex align-items-center justify-content-center rounded-circle border-0"
-            style="width: 60px; height: 60px; background-color: #b2bef2"
+      <!-- 介紹 container end -->
+    </article>
+    <!-- Banner end -->
+
+    <!-- 專業服務與方案 -->
+    <article class="section border-bottom">
+      <div class="container">
+        <h2 class="h2 mb-8">專業服務與方案</h2>
+
+        <!-- 卡片區 -->
+        <ul class="row row-gap-8 row-gap-pad-16 justify-content-center mb-8">
+          <!-- 卡片 -->
+          <li
+            data-aos="fade-right"
+            class="col-dt-10 d-dt-flex align-items-center"
           >
-            <i class="bi bi-arrow-left text-white fw-700"></i>
+            <!-- 圖片 -->
+            <picture class="flex-shrink-0">
+              <source media="(min-width: 768px)" srcset="./img/photo1.png" />
+              <img
+                src="./img/photo1.png"
+                alt="履歷健檢"
+                loading="lazy"
+                class="w-100"
+              />
+            </picture>
+
+            <!-- 文字 -->
+            <div class="overlay-right bg-white p-6">
+              <!-- 裝飾 -->
+              <div class="decorator">
+                <div class="decorator-line"></div>
+              </div>
+
+              <h3 class="h3 mb-2">履歷健檢</h3>
+              <p>
+                履歷是打開機會之門的第一步。讓我協助你突顯專業技術與核心能力，並透過簡短模擬面試為你加分，讓面試官第一眼就被你吸引。
+              </p>
+            </div>
+          </li>
+
+          <!-- 卡片 -->
+          <li
+            data-aos="fade-left"
+            class="col-dt-10 d-dt-flex align-items-center direction-row-reverse"
+          >
+            <!-- 圖片 -->
+            <picture class="flex-shrink-0">
+              <source media="(min-width: 768px)" srcset="./img/photo2.png" />
+              <img
+                src="./img/photo2.png"
+                alt="線上諮詢"
+                loading="lazy"
+                class="w-100"
+              />
+            </picture>
+
+            <!-- 文字 -->
+            <div class="overlay-left bg-white p-6">
+              <!-- 裝飾 -->
+              <div class="decorator">
+                <div class="decorator-line"></div>
+              </div>
+
+              <h3 class="h3 mb-2">線上諮詢</h3>
+              <p>
+                想快速解決前端學習瓶頸，或需要專業職涯指引？透過線上一對一諮詢，我將協助你更有方向地邁進。
+              </p>
+            </div>
+          </li>
+
+          <!-- 卡片 -->
+          <li
+            data-aos="fade-right"
+            class="col-dt-10 d-dt-flex align-items-center"
+          >
+            <!-- 圖片 -->
+            <picture class="flex-shrink-0">
+              <source media="(min-width: 768px)" srcset="./img/photo3.png" />
+              <img
+                src="./img/photo3.png"
+                alt="網頁開發"
+                loading="lazy"
+                class="w-100"
+              />
+            </picture>
+
+            <!-- 文字 -->
+            <div class="overlay-right bg-white p-6">
+              <!-- 裝飾 -->
+              <div class="decorator">
+                <div class="decorator-line"></div>
+              </div>
+
+              <h3 class="h3 mb-2">網頁開發</h3>
+              <p>
+                想打造高效能、具美感的網站？我提供從需求訪談到架構實作的一站式服務，讓你的品牌與產品在線上脫穎而出。
+              </p>
+            </div>
+          </li>
+
+          <!-- 卡片 -->
+          <li
+            data-aos="fade-left"
+            class="col-dt-10 d-dt-flex align-items-center direction-row-reverse"
+          >
+            <!-- 圖片 -->
+            <picture class="flex-shrink-0">
+              <source media="(min-width: 768px)" srcset="./img/photo4.png" />
+              <img
+                src="./img/photo4.png"
+                alt="企業內訓"
+                loading="lazy"
+                class="w-100"
+              />
+            </picture>
+
+            <!-- 文字 -->
+            <div class="overlay-left bg-white p-6">
+              <!-- 裝飾 -->
+              <div class="decorator">
+                <div class="decorator-line"></div>
+              </div>
+
+              <h3 class="h3 mb-2">企業內訓</h3>
+              <p>
+                想讓團隊快速掌握前端最新技術或優化現有專案流程？我可協助打造專業、實用的企業內訓課程，一次解決團隊痛點。
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- 聯繫我 -->
+        <a href="#" class="connect-me">
+          <h3 class="h3">聯繫我，取得更多資訊！</h3>
+          <img
+            src="./img/icon/arrow-right-circle.svg"
+            alt="聯繫我，取得更多資訊！"
+            loading="lazy"
+            class="connect-me-img"
+          />
+        </a>
+      </div>
+    </article>
+    <!-- 專業服務與方案 end -->
+
+    <!-- 部落格精選 -->
+    <article class="section border">
+      <div class="container">
+        <h2 class="h2 mb-6">部落格精選</h2>
+
+        <!-- 卡片區 -->
+        <ul class="row position-relative">
+          <!-- 卡片切換按鈕區 - 桌機寬版 - 上一篇 -->
+          <button
+            type="button"
+            class="card-slide-btn-area-lg arrow-lg-left btn-arrow d-none"
+            disabled
+          >
+            <img
+              src="./img/icon/arrow-left-circle-fill-primary-light.svg"
+              alt="上一篇"
+              loading="lazy"
+              class="btn-arrow-img"
+            />
           </button>
-          <ul class="u1 row list-unstyled g-4">
-            <li class="l1 col-12 col-md-12 col-lg-4 flex-column">
+
+          <!-- 卡片 - 1 -->
+          <li class="col-dt-4">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/photo5.png" />
               <img
                 src="./img/photo5.png"
-                class="img-fluid mb-3"
-                alt="前端開發"
+                alt="自學前端不用怕：從零開始的三大關鍵"
+                loading="lazy"
+                class="blog-card-img"
               />
-              <div class="d-flex flex-column">
-                <time>2024/10/21</time>
-                <div class="mb-1 d-flex align-items-center">
-                  <a href="#" class="tag me-2 text-decoration-none theme-color"
-                    >#前端開發</a
-                  >
-                  <a href="#" class="tag text-decoration-none theme-color"
-                    >#職涯成長</a
-                  >
-                  <a href="#" class="hot">最新文章</a>
-                </div>
-                <h3 class="h3-2">自學前端不用怕：從零開始的三大關鍵</h3>
-                <p class="p2 line-clamp-2">
-                  嗨，我是
-                  Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
-                </p>
-                <a class="reader btn1" href="#">閱讀內文</a>
+            </picture>
+
+            <!-- 日期 -->
+            <time datetime="2024-10-21" class="blog-card-date">2024/10/21</time>
+
+            <!-- tag -->
+            <div class="blog-card-tags">
+              <div class="tag-title">
+                <a href="#" class="tag-title-link">#前端開發</a>&nbsp;
+                <a href="#" class="tag-title-link">#職涯成長</a>
               </div>
-            </li>
-            <li class="l2 col-12 col-md-12 col-lg-4 d-flex flex-column">
+              <span class="tag-primary">最新文章</span>
+            </div>
+
+            <h3 class="blog-card-title h3">
+              自學前端不用怕：從零開始的三大關鍵
+            </h3>
+
+            <p class="blog-card-desc">
+              嗨，我是
+              Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
+              其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！
+            </p>
+
+            <a href="#" class="btn">閱讀內文</a>
+          </li>
+          <!-- 卡片 - 1 end -->
+
+          <!-- 卡片 - 2 -->
+          <li class="d-none d-dt-block col-dt-4">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/d-photo5.png" />
               <img
                 src="./img/d-photo5.png"
-                class="img-fluid mb-3"
-                alt="前端面試不再慌"
+                alt="前端面試不再慌：破解常見提問的三大策略"
+                loading="lazy"
+                class="blog-card-img"
               />
-              <div class="d-flex flex-column">
-                <time>2024/07/08</time>
-                <div class="mb-1 d-flex align-items-center">
-                  <a href="#" class="tag me-2 text-decoration-none theme-color"
-                    >#面試準備</a
-                  >
-                  <a href="#" class="tag text-decoration-none theme-color"
-                    >#工程師求職</a
-                  >
-                  <a href="#" class="hot">人氣文章</a>
-                </div>
-                <h3 class="h3-2">前端面試不再慌：破解常見提問的三大策略</h3>
-                <p class="p2 line-clamp-2">
-                  面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官
-                </p>
-                <a class="reader btn1" href="#">閱讀內文</a>
+            </picture>
+
+            <!-- 日期 -->
+            <time datetime="2024-07-08" class="blog-card-date">2024/07/08</time>
+
+            <!-- tag -->
+            <div class="blog-card-tags">
+              <div class="tag-title">
+                <a href="#" class="tag-title-link">#面試準備</a>&nbsp;
+                <a href="#" class="tag-title-link">#工程師求職</a>
               </div>
-            </li>
-            <li class="l3 col-12 col-md-12 col-lg-4 d-flex flex-column">
+              <span class="tag-primary">人氣文章</span>
+            </div>
+
+            <h3 class="blog-card-title h3">
+              前端面試不再慌：破解常見提問的三大策略
+            </h3>
+
+            <p class="blog-card-desc">
+              面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官關注的重點並不僅是程式碼本身，更包含問題解決的流程與溝通能力。這篇文章將分享我在面試過程中常見的三大難題，以及如何以更具條理的方式回應，讓你在面試場合中脫穎而出。
+            </p>
+
+            <a href="#" class="btn">閱讀內文</a>
+          </li>
+          <!-- 卡片 - 2 end -->
+
+          <!-- 卡片 - 3 -->
+          <li class="d-none d-dt-block col-dt-4">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/d-photo3.png" />
               <img
                 src="./img/d-photo3.png"
-                class="img-fluid mb-3"
-                alt="CSS 魔法大揭密"
+                alt="CSS 魔法大揭密：排版與設計的三大關鍵技巧"
+                loading="lazy"
+                class="blog-card-img"
               />
-              <div class="d-flex flex-column">
-                <time>2024/09/03</time>
-                <div class="mb-1">
-                  <a href="#" class="tag me-2 text-decoration-none theme-color"
-                    >#CSS設計</a
-                  >
-                  <a href="#" class="tag text-decoration-none theme-color"
-                    >#視覺體驗</a
-                  >
-                </div>
-                <h3 class="h3-2">CSS 魔法大揭密：排版與設計的三大關鍵技巧</h3>
-                <p class="p2 line-clamp-2">
-                  在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，
-                </p>
-                <a class="reader btn1" href="#">閱讀內文</a>
+            </picture>
+
+            <!-- 日期 -->
+            <time datetime="2024-09-03" class="blog-card-date">2024/09/03</time>
+
+            <!-- tag -->
+            <div class="blog-card-tags">
+              <div class="tag-title">
+                <a href="#" class="tag-title-link">#CSS設計</a>&nbsp;
+                <a href="#" class="tag-title-link">#視覺體驗</a>
               </div>
-            </li>
-          </ul>
-          <button
-            class="desktop btn d-flex align-items-center justify-content-center rounded-circle border-0"
-            style="width: 60px; height: 60px; background-color: #0027d5"
-          >
-            <i class="bi bi-arrow-right text-white"></i>
-          </button>
-        </div>
-        <div data-aos="fade-right" class="mobile">
-          <button
-            class="mobile1 btn d-flex align-items-center justify-content-center rounded-circle border-0"
-            style="width: 60px; height: 60px; background-color: #b2bef2"
-          >
-            <i class="bi bi-arrow-left text-white fw-700"></i>
-          </button>
-          <button
-            class="mobile2 btn d-flex align-items-center justify-content-center rounded-circle border-0"
-            style="width: 60px; height: 60px; background-color: #0027d5"
-          >
-            <i class="bi bi-arrow-right text-white"></i>
-          </button>
-        </div>
-      </div>
-      <div data-aos="fade-up" class="line1"></div>
+            </div>
 
-      <div class="consult">
-        <h2 data-aos="fade-up" class="h2-2">職涯諮詢成功案例</h2>
-        <div data-aos="fade-right" class="gray position-relative">
-          <picture data-aos="fade-right">
-            <source
-              srcset="./img/mob-photo8.png"
-              media="(max-width: 767.98px)"
-            />
-            <img src="./img/photo8.png" alt="人物" />
-          </picture>
-        </div>
-        <div data-aos="fade-left" class="white">
-          <svg
-            class="line2-1"
-            viewBox="0 0 200 20"
-            xmlns="http://www.w3.org/2000/svg"
+            <h3 class="blog-card-title h3">
+              CSS 魔法大揭密：排版與設計的三大關鍵技巧
+            </h3>
+
+            <p class="blog-card-desc">
+              在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，往往讓人抓破頭皮。這篇文章想跟大家分享我在實務專案中累積的三大技巧，幫助你更有效率地駕馭
+              CSS，打造兼具美感與功能性的網頁。
+            </p>
+
+            <a href="#" class="btn">閱讀內文</a>
+          </li>
+          <!-- 卡片 - 3 end -->
+
+          <!-- 卡片切換按鈕區 - 桌機寬版 - 下一篇 -->
+          <button
+            type="button"
+            class="card-slide-btn-area-lg arrow-lg-right btn-arrow d-none"
           >
-            <line
-              x1="10"
-              y1="10"
-              x2="25"
-              y2="10"
-              stroke="blue"
-              stroke-width="1"
+            <img
+              src="./img/icon/arrow-right-circle-fill-primary.svg"
+              alt="下一篇"
+              loading="lazy"
+              class="btn-arrow-img"
             />
-          </svg>
-          <p>
-            在職涯發展的關鍵轉折點上，適時的協助與正確的方向至關重要。藉由職涯諮詢，我可以幫助你加速釐清目標、建立更全面的技術與軟實力，並有效<span
-              style="color: #0027d5"
-              >突破原有的舒適圈</span
+          </button>
+        </ul>
+        <!-- 卡片區 end -->
+
+        <!-- 卡片切換按鈕區 - 桌機寬版以下 -->
+        <div class="card-slide-btn-area text-align-right mt-8">
+          <!-- 上一篇 -->
+          <button type="button" class="btn-arrow mr-6" disabled>
+            <img
+              src="./img/icon/arrow-left-circle-fill-primary-light.svg"
+              alt="上一篇"
+              loading="lazy"
+              class="btn-arrow-img"
+            />
+          </button>
+
+          <!-- 下一篇 -->
+          <button type="button" class="btn-arrow">
+            <img
+              src="./img/icon/arrow-right-circle-fill-primary.svg"
+              alt="下一篇"
+              loading="lazy"
+              class="btn-arrow-img"
+            />
+          </button>
+        </div>
+        <!-- 卡片切換按鈕區 - 桌機寬版以下 end -->
+      </div>
+    </article>
+    <!-- 部落格精選 end -->
+
+    <!-- 職涯諮詢案例 -->
+    <article class="section border">
+      <div class="container">
+        <h2 class="h2 mb-6">職涯諮詢<br class="d-pad-none" />成功案例</h2>
+
+        <div
+          class="row direction-column direction-dt-row align-items-center mb-10"
+        >
+          <!-- 圖片 -->
+          <div class="col-dt-7">
+            <div class="bg-dark-925 p-6">
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/photo8.png" />
+                <img src="./img/photo8.png" alt="職涯諮詢案例" loading="lazy" />
+              </picture>
+            </div>
+          </div>
+
+          <div class="col-dt-5">
+            <!-- 說明 -->
+            <div class="consultation-desc">
+              <!-- 說明段落 1 -->
+              <div class="consultation-desc-1">
+                <!-- 裝飾 -->
+                <div class="decorator mb-6">
+                  <div class="decorator-line"></div>
+                </div>
+
+                <p class="fw-700">
+                  在職涯發展的關鍵轉折點上，適時的協助與正確的方向至關重要。藉由職涯諮詢，我可以幫助你加速釐清目標、建立更全面的技術與軟實力，並有效<span
+                    class="color-primary"
+                    >突破原有的舒適圈</span
+                  >。
+                </p>
+              </div>
+
+              <!-- 說明段落 2 -->
+              <div class="consultation-desc-2">
+                <!-- 裝飾 -->
+                <div class="decorator mb-6">
+                  <div class="decorator-line"></div>
+                </div>
+
+                <p class="fw-700 mb-6">
+                  期待在下一個新機會中，我能與你一起攜手邁向更高峰！
+                </p>
+                <button type="button" class="btn btn-primary">
+                  立即預約諮詢
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 案例卡片區 -->
+        <ul class="row mx-0 py-6 px-3 bg-dark-950 row-gap-6">
+          <!-- 卡片 1 -->
+          <li class="col-pad-6 col-dt-3">
+            <img
+              src="./img/people1.png"
+              alt="Jason"
+              loading="lazy"
+              class="mb-4"
+            />
+            <h3 class="h4 mb-2">無經驗到前端工程師 Offer</h3>
+
+            <!-- 特點 -->
+            <ul class="pb-4 mb-4 border-bottom border-text">
+              <li class="d-flex col-gap-2 mb-2">
+                <i class="bi bi-check-square-fill color-primary"></i>
+                <span>打造前端專案與履歷亮點</span>
+              </li>
+              <li class="d-flex col-gap-2">
+                <i class="bi bi-check-square-fill color-primary"></i>
+                <span>深度強化面試表現</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn">前往聆聽 podcast</button>
+          </li>
+          <!-- 卡片 1 end -->
+
+          <!-- 卡片 2 -->
+          <li class="col-pad-6 col-dt-3">
+            <img
+              src="./img/people2.png"
+              alt="David"
+              loading="lazy"
+              class="mb-4"
+            />
+            <h3 class="h4 mb-2">轉職迷茫到明確學習規劃</h3>
+
+            <!-- 特點 -->
+            <ul class="pb-4 mb-4 border-bottom border-text">
+              <li class="d-flex col-gap-2 mb-2">
+                <i class="bi bi-check-square-fill color-primary"></i>
+                <span>制訂階段性目標與時間安排</span>
+              </li>
+              <li class="d-flex col-gap-2">
+                <i class="bi bi-check-square-fill color-primary"></i>
+                <span>鼓勵參與前端社群或活動</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn">前往聆聽 podcast</button>
+          </li>
+          <!-- 卡片 2 end -->
+
+          <!-- 卡片 3 -->
+          <li class="col-pad-6 col-dt-3">
+            <img
+              src="./img/people3.png"
+              alt="Bob"
+              loading="lazy"
+              class="mb-4"
+            />
+            <h3 class="h4 mb-2">面試緊張到從容應對</h3>
+
+            <!-- 特點 -->
+            <ul class="pb-4 mb-4 border-bottom border-text">
+              <li class="d-flex col-gap-2 mb-2">
+                <i class="bi bi-check-square-fill color-primary"></i>
+                <span>透過面試模擬找出常犯的邏輯漏洞</span>
+              </li>
+              <li class="d-flex col-gap-2">
+                <i class="bi bi-check-square-fill color-primary"></i>
+                <span>討論遇到不熟悉議題時的回應方式</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn">前往聆聽 podcast</button>
+          </li>
+          <!-- 卡片 3 end -->
+
+          <!-- 卡片 4 -->
+          <li class="col-pad-6 col-dt-3">
+            <img
+              src="./img/people4.png"
+              alt="Mary"
+              loading="lazy"
+              class="mb-4"
+            />
+            <h3 class="h4 mb-2">面試緊張到從容應對</h3>
+
+            <!-- 特點 -->
+            <ul class="pb-4 mb-4 border-bottom border-text">
+              <li class="d-flex col-gap-2 mb-2">
+                <i class="bi bi-check-square-fill color-primary"></i>
+                <span>擬定進階框架或技術研究目標</span>
+              </li>
+              <li class="d-flex col-gap-2">
+                <i class="bi bi-check-square-fill color-primary"></i>
+                <span>培養跨團隊溝通與簡報能力</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn">前往聆聽 podcast</button>
+          </li>
+          <!-- 卡片 4 end -->
+        </ul>
+      </div>
+    </article>
+    <!-- 職涯諮詢案例 end -->
+
+    <!-- 訂閱電子報 -->
+    <section>
+      <div class="d-dt-flex">
+        <!-- 個人照 -->
+        <picture class="flex-shrink-0 w-dt-50">
+          <source media="(min-width: 768px)" srcset="./img/photo9.png" />
+          <img
+            src="./img/photo9.png"
+            alt="Alyse Wang"
+            loading="lazy"
+            class="w-100"
+          />
+        </picture>
+
+        <!-- 訂閱 -->
+        <div class="newsletter">
+          <div class="container container-dt-clear">
+            <!-- 內容 -->
+            <div class="newsletter-content">
+              <h2 class="h2 mb-4">訂閱電子報</h2>
+
+              <p class="fs-20 mb-6">
+                立即訂閱，搶先掌握<span class="color-primary">前端 x 職涯</span
+                >的獨家資訊！
+              </p>
+
+              <!-- 表單 -->
+              <form action="javascript:void(0)">
+                <input
+                  type="text"
+                  class="newsletter-input mb-2"
+                  placeholder="請輸入您的大名"
+                  required
+                />
+                <input
+                  type="email"
+                  class="newsletter-input mb-6"
+                  placeholder="請輸入您的電子信箱"
+                  required
+                />
+                <button class="btn btn-primary">啟動訂閱</button>
+              </form>
+            </div>
+            <!-- 內容 end -->
+          </div>
+        </div>
+        <!-- 訂閱 end -->
+      </div>
+    </section>
+    <!-- 訂閱電子報 end -->
+
+    <!-- 與我聯繫 -->
+    <article class="section border">
+      <div class="container">
+        <h2 class="h2 mb-6">與我聯繫</h2>
+
+        <!-- 聯繫方式 -->
+        <ul class="fs-24">
+          <!-- Email -->
+          <li class="pb-4 border-bottom border-black mb-6 mb-pad-4">
+            <div
+              class="d-flex direction-column direction-pad-row justify-content-pad-between align-items-pad-center row-gap-2"
             >
-            。
-          </p>
-        </div>
-        <div data-aos="fade-up" class="gray2">
-          <svg
-            class="line2-2"
-            viewBox="0 0 200 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="10"
-              y1="10"
-              x2="25"
-              y2="10"
-              stroke="blue"
-              stroke-width="1"
-            />
-          </svg>
-          <p>期待在下一個新機會中，我能與你一起攜手邁向更高峰！</p>
-          <button class="btn1">立即預約諮詢</button>
-        </div>
-        <div data-aos="fade-up" class="people">
-          <div class="peo">
-            <img src="./img/people1.png" alt="people1" />
-            <h4 class="h4-2">無經驗到前端工程師 Offer</h4>
-            <p class="p1-2">
-              <i
-                class="bi bi-check-lg"
-                style="color: white; background-color: #0027d5"
-              ></i>
-              <span></span> 打造前端專案與履歷亮點
-            </p>
-            <p class="p1-2">
-              <i
-                class="bi bi-check-lg"
-                style="color: white; background-color: #0027d5"
-              ></i
-              ><span></span> 深度強化面試表現
-            </p>
-            <div class="line3"></div>
-            <button class="btn1">前往聆聽 podcast</button>
-          </div>
-          <div class="peo">
-            <img src="./img/people2.png" alt="people2" />
-            <h4 class="h4-2">轉職迷茫到明確學習規劃</h4>
-            <p class="p1-2">
-              <i
-                class="bi bi-check-lg"
-                style="color: white; background-color: #0027d5"
-              ></i>
-              <span></span> 制訂階段性目標與時間安排
-            </p>
-            <p class="p1-2">
-              <i
-                class="bi bi-check-lg"
-                style="color: white; background-color: #0027d5"
-              ></i
-              ><span></span> 鼓勵參與前端社群或活動
-            </p>
-            <div class="line3"></div>
-            <button class="btn1">前往聆聽 podcast</button>
-          </div>
-          <div class="peo">
-            <img src="./img/people3.png" alt="people3" />
-            <h4 class="h4-2">面試緊張到從容應對</h4>
-            <p class="p1-2">
-              <i
-                class="bi bi-check-lg"
-                style="color: white; background-color: #0027d5"
-              ></i>
-              <span></span> 透過面試模擬找出常犯的邏輯漏洞
-            </p>
-            <p class="p1-2">
-              <i
-                class="bi bi-check-lg"
-                style="color: white; background-color: #0027d5"
-              ></i
-              ><span></span> 討論遇到不熟悉議題時的回應方式
-            </p>
-            <div class="line3"></div>
-            <button class="btn1">前往聆聽 podcast</button>
-          </div>
-          <div class="peo">
-            <img src="./img/people4.png" class="img-1" alt="people4" />
-            <h4 class="h4-2">面試緊張到從容應對</h4>
-            <p class="p1-2">
-              <i
-                class="bi bi-check-lg"
-                style="color: white; background-color: #0027d5"
-              ></i>
-              <span></span> 擬定進階框架或技術研究目標
-            </p>
-            <p class="p1-2">
-              <i
-                class="bi bi-check-lg"
-                style="color: white; background-color: #0027d5"
-              ></i
-              ><span></span> 培養跨團隊溝通與簡報能力
-            </p>
-            <div class="line3"></div>
-            <button class="btn1">前往聆聽 podcast</button>
-          </div>
-        </div>
-      </div>
-
-      <div
-        data-aos="fade-up"
-        class="intro position-relative"
-        style="border-top: 1px solid #6c757d"
-      >
-        <div class="container-fluid px-0">
-          <div class="row g-0">
-            <div class="col-12 col-md-12 col-lg-6">
-              <img
-                src="./img/photo9.png"
-                class="img-fluid w-100"
-                alt="人物介紹"
-              />
+              <div
+                class="d-flex direction-column direction-pad-row col-gap-4 row-gap-2"
+              >
+                <a href="mailto:alysewang@hexschool.com"
+                  ><span class="text-decoration-underline">
+                    alysewang@hexschool.com
+                  </span>
+                </a>
+                <span>合作洽談</span>
+              </div>
+              <i class="bi bi-arrow-right d-flex"></i>
             </div>
-            <div class="col-12 col-md-12 col-lg-6">
-              <img
-                src="./img/Hero Section2.png"
-                class="img-fluid w-100 object-fit: cover"
-                alt="人物背景"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+          </li>
 
-      <div data-aos="fade-up" class="contact">
-        <h2 class="h2-7">訂閱電子報</h2>
-        <p class="p1-3">
-          立即訂閱，搶先掌握<span style="color: #0027d5">前端 x 職涯</span
-          >的獨家資訊！
-        </p>
-        <input class="h6-1" type="text" placeholder="請輸入您的大名" />
-        <input class="h6-1" type="text" placeholder="請輸入您的電子信箱" />
-        <button class="btn2 btn1">啟動訂閱</button>
+          <!-- YT -->
+          <li class="pb-4 border-bottom border-black mb-6 mb-pad-4">
+            <div
+              class="d-flex direction-column direction-pad-row justify-content-pad-between align-items-pad-center row-gap-2"
+            >
+              <div class="d-flex align-items-center col-gap-2">
+                <img src="./img/icon/youtube.png" alt="Youtube" />
+                <a href="#">
+                  <span>Youtube</span>
+                  <span>職涯諮詢室</span>
+                </a>
+              </div>
+              <i class="bi bi-arrow-right d-flex"></i>
+            </div>
+          </li>
+
+          <!-- podcast -->
+          <li class="pb-4 border-bottom border-black mb-6 mb-pad-4">
+            <div
+              class="d-flex direction-column direction-pad-row justify-content-pad-between align-items-pad-center row-gap-2"
+            >
+              <div class="d-flex align-items-center col-gap-2">
+                <img src="./img/icon/padcast.png" alt="Apple Podcast" />
+                <a href="#">
+                  <span>podcast</span>
+                  <span>職涯諮詢室</span>
+                </a>
+              </div>
+              <i class="bi bi-arrow-right d-flex"></i>
+            </div>
+          </li>
+
+          <!-- facebook -->
+          <li class="pb-4 border-bottom border-black mb-6 mb-pad-4">
+            <div
+              class="d-flex direction-column direction-pad-row justify-content-pad-between align-items-pad-center row-gap-2"
+            >
+              <div class="d-flex align-items-center col-gap-2">
+                <img src="./img/icon/facebook.png" alt="Facebook" />
+                <a href="#">
+                  <span>Facebook</span>
+                  <span>前端社群</span>
+                </a>
+              </div>
+              <i class="bi bi-arrow-right d-flex"></i>
+            </div>
+          </li>
+
+          <!-- linkedin -->
+          <li class="pb-4 border-bottom border-black mb-6 mb-pad-4">
+            <div
+              class="d-flex direction-column direction-pad-row justify-content-pad-between align-items-pad-center row-gap-2"
+            >
+              <div class="d-flex align-items-center col-gap-2">
+                <img src="./img/icon/linkedin.png" alt="Linkedin" />
+                <a href="#">
+                  <span>linkedin</span>
+                  <span>職涯交流</span>
+                </a>
+              </div>
+              <i class="bi bi-arrow-right d-flex"></i>
+            </div>
+          </li>
+
+          <!-- Instagram -->
+          <li class="pb-4 border-bottom border-black mb-6 mb-pad-4">
+            <div
+              class="d-flex direction-column direction-pad-row justify-content-pad-between align-items-pad-center row-gap-2"
+            >
+              <div class="d-flex align-items-center col-gap-2">
+                <img src="./img/icon/instrgram.png" alt="Instagram" />
+                <a href="#">
+                  <span>Instagram</span>
+                  <span>日常分享</span>
+                </a>
+              </div>
+              <i class="bi bi-arrow-right d-flex"></i>
+            </div>
+          </li>
+        </ul>
+        <!-- 聯繫方式 end -->
       </div>
-      <div data-aos="fade-up" class="talk">
-        <h2 class="h2-8">與我聯繫</h2>
-        <div class="social">
-          <p class="p1-4 email">alysewang@hexschool.com 合作洽談</p>
-          <i class="icon2 bi bi-arrow-right fs-2"></i>
-        </div>
-        <div class="line5"></div>
-        <div class="social">
-          <div class="icons1">
-            <img src="./img/icon/youtube.png" alt="youtube" />
-            <p class="p1-4">Youtube 職涯諮詢室</p>
-          </div>
-          <i class="bi bi-arrow-right fs-2 ms-auto"></i>
-        </div>
-        <div class="line5"></div>
-        <div class="social">
-          <div class="icons1">
-            <img src="./img/icon/padcast.png" alt="podcast" />
-            <p class="p1-4">podcast 職涯諮詢室</p>
-          </div>
-          <i class="bi bi-arrow-right fs-2 ms-auto"></i>
-        </div>
-        <div class="line5"></div>
-        <div class="social">
-          <div class="icons1">
-            <img src="./img/icon/facebook.png" alt="facebook" />
-            <p class="p1-4">facebook 前端社群</p>
-          </div>
-          <i class="bi bi-arrow-right fs-2 ms-auto"></i>
-        </div>
-        <div class="line5"></div>
-        <div class="social">
-          <div class="icons1">
-            <img src="./img/icon/linkedin.png" alt="linkedin" />
-            <p class="p1-4">linkedin 職涯交流</p>
-          </div>
-          <i class="bi bi-arrow-right fs-2 ms-auto"></i>
-        </div>
-        <div class="line5"></div>
-        <div class="social">
-          <div class="icons1">
-            <img src="./img/icon/instrgram.png" alt="instrgram" />
-            <p class="p1-4">instrgram 日常分享</p>
-          </div>
-          <i class="bi bi-arrow-right fs-2 ms-auto"></i>
-        </div>
-        <div class="line5"></div>
-      </div>
-      <div class="line"></div>
-      <div class="text-center p-4" style="background-color: none">
-        <h6>© 2025 Alyse Wang. All rights reserved.</h6>
-      </div>
-    </div>
-    <script src="./bootstrap.bundle.min.js"></script>
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    </article>
+    <!-- 與我聯繫 end -->
+
+    <footer class="footer">
+      <p>© 2025 Alyse Wang. All rights reserved.</p>
+    </footer>
+    <!-- 加入效果 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -557,6 +790,6 @@
         mirror: false, // true 表示滾過元素後向上滑回可再次播放（鏡像效果）
         anchorPlacement: "top-bottom", // 判定元素相對視窗的位置來觸發動畫，例如 'top-bottom' 代表元素頂端到視窗底端
       });
-    </script> -->
+    </script>
   </body>
 </html>
