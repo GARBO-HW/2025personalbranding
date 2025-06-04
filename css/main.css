@@ -1,3 +1,5 @@
+@import url(all.css);
+
 @charset "UTF-8";
 /* index page style */
 /* Banner */
@@ -46,6 +48,7 @@
 .section {
   padding-top: 64px;
   padding-bottom: 64px;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .section {
